@@ -137,8 +137,6 @@ func generateRandomName() string {
 		lastWasVowel = !lastWasVowel
 	}
 
-	// TODO: Eventually, capitalize the first letter of the surname
-
 	return name
 }
 
@@ -190,8 +188,6 @@ func generateGenericPlayer(cfg config) models.Player {
 	player.Nationality = nationality()
 	player.Stamina = randomiser.AveragedRandomPartDev(cfg.averageStamina, 2)
 	player.Aggression = randomiser.AveragedRandomPartDev(cfg.averageAggression, 3)
-	// TODO: generate stuff
-
 	return player
 }
 
